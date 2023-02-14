@@ -1,14 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body > div.first,
+.first.most-inner {
+  border-bottom: 10px solid black;
+}
+
+
+div.first {
+  border-radius: 50% 50% 0 0;
+}
+
+
+div.first + div {
+border-left: 10px solid pink;
+}
+
+
+div.most-inner {
+  border-radius: 50%;
+}
+
+
+div.most-inner:hover {
+  background-color: black;
+}
+
+
+div.first.most-inner::before {
+content: "T";
+}
+
+
+div.first.most-inner::after {
+  content: "LOL";
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  background-color: paleturquoise;
+  }
+
+
 body > div>div {
   height: 90vh;
   width: 90vh;
   background-color:aqua;
 }
 
+
 body > div {
   height: 100vh;
   width: 100vh;
   background-color:yellow;
 }
+
 
 
 body > div>div>div {
