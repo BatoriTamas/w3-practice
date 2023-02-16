@@ -21,6 +21,24 @@ let favoriteBooks = [
 //   console.log(favoriteBooks[i].author)
 // }
 
-for (let i= 0; i <2; i++) {
-  console.log(favoriteBooks[i].title);
-}
+// for (let i= 0; i <2; i++) {
+//   console.log(favoriteBooks[i].title);
+// }
+
+const bookTitleOne = favoriteBooks[0].title
+const bookTitleTwo = favoriteBooks[1].title
+
+if (favoriteBooks[0].isNewerThan2000 === true) {
+  
+  console.log("This book is newer than 2000:" + bookTitleOne)
+} else {
+  console.log("This book is older than 2000:" + bookTitleTwo)
+};
+
+if (favoriteBooks[1].isNewerThan2000 === true) {
+  
+  console.log("This book is newer than 2000:" + bookTitleOne)
+} else {
+  console.log("This book is older than 2000:" + bookTitleTwo)
+};
+
