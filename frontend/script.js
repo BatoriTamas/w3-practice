@@ -25,20 +25,47 @@ let favoriteBooks = [
 //   console.log(favoriteBooks[i].title);
 // }
 
-const bookTitleOne = favoriteBooks[0].title
-const bookTitleTwo = favoriteBooks[1].title
+// const bookTitleOne = favoriteBooks[0].title
+// const bookTitleTwo = favoriteBooks[1].title
 
-if (favoriteBooks[0].isNewerThan2000 === true) {
+// if (favoriteBooks[0].isNewerThan2000 === true) {
   
-  console.log("This book is newer than 2000:" + bookTitleOne)
-} else {
-  console.log("This book is older than 2000:" + bookTitleTwo)
-};
+//   console.log("This book is newer than 2000:" + bookTitleOne)
+// } else {
+//   console.log("This book is older than 2000:" + bookTitleTwo)
+// };
 
-if (favoriteBooks[1].isNewerThan2000 === true) {
+// if (favoriteBooks[1].isNewerThan2000 === true) {
   
-  console.log("This book is newer than 2000:" + bookTitleOne)
-} else {
-  console.log("This book is older than 2000:" + bookTitleTwo)
-};
+//   console.log("This book is newer than 2000:" + bookTitleOne)
+// } else {
+//   console.log("This book is older than 2000:" + bookTitleTwo)
+// };
 
+if (favoriteBooks[0].isNewerThan2000 !== true) {
+  console.log("This book is older than 2000: " + favoriteBooks[0].title);
+} else {
+  console.log("This book is newer than 2000: " + favoriteBooks[0].title);
+}
+
+if (favoriteBooks[1].isNewerThan2000 !== true) {
+  console.log("This book is older than 2000: " + favoriteBooks[1].title);
+} else {
+  console.log("This book is newer than 2000: " + favoriteBooks[1].title);
+}
+
+
+
+if (favoriteBooks[0].year < 2000) {
+  console.log("This book is older than 2000: " + favoriteBooks[0].title);
+} else {
+  console.log("This book is newer than 2000: " + favoriteBooks[0].title);
+}
+
+if (favoriteBooks[1].year < 2000) {
+  console.log("This book is older than 2000: " + favoriteBooks[1].title);
+} else if (favoriteBooks[1].year = 2000) {
+  console.log("This book is from 2000: " + favoriteBooks[1].title);
+} else {
+  console.log("This book is newer than 2000: " + favoriteBooks[1].title);
+}
